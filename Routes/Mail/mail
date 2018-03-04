@@ -1,0 +1,49 @@
+const express = require('express');
+const router = express.Router();
+const nodemailer = require('nodemailer');
+
+router.post('/',function(req,res) {
+    sendMail(process.env, req,res);
+})
+
+function sendMail(env,req,res) {
+    const authObject = {
+        type: 'OAuth2',
+        clientId: env.CLIENT_ID,
+        clientSecret: env.CLIENT_SECRET
+    };
+
+    const transporter = nodemailer.createTransport({
+        host: 'smtp.gmail.com',
+        port: 465,
+        auth: authObject
+    });
+
+    const mailOptions = {
+        from: env.EMAIL,
+        to: 'guptasourabh22@gmail.com',
+        subject: 'SomeOne Wants To Contact You',
+        text: 'HEllo',
+        generateTextFromHTML: true,
+        html: '<p>Hi ! Sourabh ' + req.body.name +  ' Wants To Contact You. He States The Following Reasons To Contact You. <br/>'+ req.body.reasonToContact
+        +'. <br/>His Contact Details Are <br/>' + req.body.contactDetails + '</p>',
+        auth : {
+            user: env.EMAIL,
+            refreshToken: env.REFRESH_TOKEN,
+            accessToken: env.ACCESS_TOKEN,
+            expires: 1484314697598
+        }
+    };
+
+
+    transporter.sendMail(mailOptions, function (err, info) {
+        if(err)
+            console.log(err);
+        else {
+            res.send({success : true});
+        }
+
+        transporter.close();
+    });
+}
+module.exports = router;

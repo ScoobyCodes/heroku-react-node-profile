@@ -1,0 +1,11 @@
+.Tile {
+    height: 30px;
+    width: 100%;
+    background-color: rgba(200,40,40,.6);
+    margin-top: 10px;
+}
+
+.Form {
+    height: 100%;
+    width: 100%;
+}

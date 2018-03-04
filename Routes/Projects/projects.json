@@ -1,0 +1,44 @@
+{
+  "cricket-stats" : {
+    "Name" : "CRICKET STATS",
+    "Description" : "A frontend Web App having static data. Implemented using frameworks like materialize and bootsstrap. A Good UI experience And is Mobile Responsive. Clicking Menu Button on top left opens Details of Upcoming Tournaments And International Cricket Team. Clicking On Indian Cricket Team Image On Carousel Opens Profile of Former Indian Skipper'Rahul Dravid'",
+    "Link" : "https://github.com/ScoobyCodes/cricket-stats",
+     "TechnologiesUsed" : "Javascript, Html, Css, materialize and bootsstrap"
+  },
+  "remind-me" : {
+    "Name" : "REMIND ME",
+    "Description" : "This app reminds you about various activities which one might find difficult to remember through email notifications.VERSION: 1.0.1",
+    "Link" : "https://github.com/ScoobyCodes/remind-me",
+    "TechnologiesUsed" : "NodeJs, PassPortJs, Sequelize, Javascript, Semantics, Materialize And HTML"
+  },
+  "io-chat" : {
+    "Name" : "IO CHAT",
+    "Description" : "A simple Chat Room Application implemented using technologies like Nodejs , Jquery And Bootstrap. For Private Messaging : Click the user Once.",
+    "Link" : "https://github.com/ScoobyCodes/io-chat",
+    "TechnologiesUsed" : "Bootsstrap , SocketIo, NodeJs, Express And Javascript"
+  },
+  "react-burger" : {
+    "Name" : "REACT BURGER",
+    "Description" : "React Burger is a simple Burger Ordering Web App Implemented Using React And Firebase. Redux And React-Router Are Also Used in this Web App. In order to Run this App , Simply type npm start in your Terminal.",
+    "Link" : "https://github.com/ScoobyCodes/react-burger",
+    "TechnologiesUsed" : "React, Redux, React Router, JSX And Css"
+  },
+  "login-app" : {
+    "Name" : "LOGIN APP",
+    "Description" : "A Login App Strategy Implemented Through NodeJS, Express, Mongoose And PassPortJs. Integerate In Your App For A Complete User Login System.",
+    "Link" : "https://github.com/ScoobyCodes/login-passport",
+    "TechnologiesUsed" : "Node JS, Jade, Passport JS, Mongoose, Javascript And Bootsstrap."
+  },
+  "canvas-race" : {
+    "Name" : "CANVAS RACE",
+    "Description" : "A classic racing game made using javascript, HTML5 canvas and through GIMP(GNU Image Manipulation Program). ",
+    "Link" : "https://github.com/ScoobyCodes/canvas-race",
+    "TechnologiesUsed" : "Javascript, GIMP And HTML 5 Canvas"
+  },
+  "canvas-bounce" : {
+    "Name" : "CANVAS BOUNCE",
+    "Description" : "Classy 2D Bounce exhibits functionalities like Collision Handling And Paddle Handling in a very Simple And Effective Manner. Implemented using Javascript And HTML5 Canvas.",
+    "Link" : "https://github.com/ScoobyCodes/canvas-bounce",
+    "TechnologiesUsed" : "Javascript, GIMP And HTML 5 Canvas"
+  }
+}

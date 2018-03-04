@@ -1,0 +1,70 @@
+.Project {
+    height : 30%;
+    background-color: rgba(100,40,30,0.7);
+    width: 98%;
+    align-self: center;
+    margin-top : 20px;
+    overflow: scroll;
+    align-items: center;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.Name {
+    font-size: 30px;
+    font-weight: 600;
+    height: 40px;
+    padding: 5px;
+    background-color: rgba(240,240,240,.6);
+    color: rgba(60,10,60,.7);
+    margin: 2px
+}
+
+.Desc {
+    font-size: 18px;
+    background-color: rgba(40,40,40,.3);
+    padding: 5px;
+    margin: 3px;
+    color: rgba(240,240,240,.7);
+}
+
+.TechUsed {
+    font-size : 16px;
+    padding: 5px;
+    background-color: rgba(40,40,40,.3);
+    color: rgba(240,240,240,.7);
+    margin: 5px;
+}
+
+.Link {
+    height: 40px;
+    margin: 5px;
+    padding: 2px;
+    background-color: rgba(80,80,80,.7);
+    align-items: center;
+    text-align: center;
+    align-self: center;
+}
+
+.Link a {
+    color: rgba(100,160,100,0.7);
+}
+
+@media (max-width: 500px) {
+    .Name {
+        height: 20px;
+        font-size: 16px;
+    }
+
+    .Desc {
+        font-size: 12px;
+    }
+
+    .TechUsed {
+        font-size: 12px;
+    }
+
+    .Link {
+        height: 20px;
+    }
+}

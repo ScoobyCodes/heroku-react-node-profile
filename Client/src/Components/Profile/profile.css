@@ -1,0 +1,13 @@
+.Profile img {
+    height : 100px;
+    width : 100px;
+    padding : 15px
+}
+
+@media (max-width: 1000px) {
+    .Profile img {
+        height: 40px;
+        width: 40px;
+        padding: 5px;
+    }
+}

@@ -1,0 +1,64 @@
+.Contact {
+    background-color: rgba(3,2,5,0.7);
+    height: 86%;
+    width: 95%;
+    position: absolute;
+    top: 10%;
+    left: 2.5%;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-flow: row;
+    z-index: 500;
+    justify-content: center;
+}
+
+.Profiles {
+    height: 40%;
+    width: 40%;
+    display: flex;
+    flex-flow: column;
+    background-color: rgba(230,230,230,0.5);
+    margin-left: 10px;
+}
+
+.ContactForm {
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    background-color: rgba(230,230,230,0.5);
+    margin-left : -120px
+}
+
+.Coding {
+    display: flex;
+    flex-flow: row;
+}
+
+.SocialWeb {
+    display: flex;
+    flex-flow: row;
+}
+
+
+@media (max-width: 1000px) {
+    .Contact {
+        top: 12.5%;
+        flex-flow : column;
+    }
+
+    .Profiles {
+        width: 90%;
+        height: 30%;
+        margin-left : 5px;
+    }
+
+    .ContactForm {
+        width: 90%;
+        height: 40%;
+        margin-left : 5px;
+    }
+}

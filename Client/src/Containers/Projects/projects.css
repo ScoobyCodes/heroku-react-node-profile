@@ -1,0 +1,21 @@
+.Projects {
+    overflow: scroll;
+    background-color: rgba(3,2,5,0.7);
+    height: 80%;
+    width: 70%;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    align-content: center;
+    text-align: center;
+    z-index: 500;
+}
+
+@media (max-width: 500px) {
+    .Projects {
+        top: 15%;
+        width: 90%;
+        left: 5%;
+        height: 75%;
+    }
+}
