@@ -8,6 +8,7 @@ const port = process.env.PORT || 5000;
 const resume = require('./Routes/Resume/resume');
 const mail = require('./Routes/Mail/mail');
 const bodyParser =require('body-parser');
+const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -17,4 +18,8 @@ app.use('/projects',projects);
 app.use('/download',resume);
 app.use('/contactdata',mail);
 
-app.listen(port);
+app.get('*', function(request, response) {
+    response.sendFile(path.resolve(__dirname, '/client/build', 'index.html'));
+});
+
+app.listen(PORT);
