@@ -41,8 +41,9 @@ class contact extends Component {
     }
 
     downloadResume = () => {
-        window.open("/download")
+        window.open('/download');
     }
+
     render() {
         let socialWebArray = [];
         let codingArray = [];
