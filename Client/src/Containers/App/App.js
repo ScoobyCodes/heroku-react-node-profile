@@ -18,7 +18,7 @@ class App extends Component {
 
     let routes = (
       <Switch>
-          <Route path="/projects" component={asyncProjects}/>
+          <Route path="/project" component={asyncProjects}/>
           <Route path="/contact" component={asyncContact}/>
           <Route path="/" exact component={home}/>
           <Redirect to="/"/>
