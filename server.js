@@ -4,7 +4,6 @@ const express = require('express');
 const cors =  require('cors');
 const projects = require('./Routes/Projects/projects');
 const app = express();
-const port = process.env.PORT || 5000;
 const resume = require('./Routes/Resume/resume');
 const mail = require('./Routes/Mail/mail');
 const bodyParser =require('body-parser');
@@ -19,7 +18,7 @@ app.use('/download',resume);
 app.use('/contactdata',mail);
 
 app.get('*', function(request, response) {
-    response.sendFile(path.resolve(__dirname, '/Client/public', 'index.html'));
+    response.sendFile(path.resolve(__dirname, '/Client/build/', 'index.html'));
 });
 
 app.listen(PORT);
