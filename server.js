@@ -18,7 +18,7 @@ app.use('/download',resume);
 app.use('/contactdata',mail);
 
 app.get('*', function(request, response) {
-    response.sendFile(path.resolve(__dirname, '/Client/build/', 'index.html'));
+    response.sendFile(path.resolve(__dirname, './Client/build', 'index.html'));
 });
 
 app.listen(PORT);
