@@ -19,7 +19,7 @@ app.use('/download',resume);
 app.use('/contactdata',mail);
 
 app.get('*', function(request, response) {
-    response.sendFile(path.resolve(__dirname, '/client/public', 'index.html'));
+    response.sendFile(path.resolve(__dirname, '/Client/public', 'index.html'));
 });
 
 app.listen(PORT);
