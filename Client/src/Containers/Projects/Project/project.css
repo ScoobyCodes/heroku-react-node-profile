@@ -50,7 +50,7 @@
     color: rgba(100,160,100,0.7);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1200px) and (max-height: 600px) {
     .Name {
         height: 20px;
         font-size: 16px;

@@ -44,7 +44,7 @@
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) and (max-height: 1200px) {
     .Contact {
         top: 12.5%;
         flex-flow : column;
