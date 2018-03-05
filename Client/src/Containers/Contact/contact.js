@@ -10,7 +10,6 @@ import classes from './contact.css';
 import Profile from '../../Components/Profile/profile';
 import Button from '../../Components/Ui/ButtonResume/Button';
 import ContactForm from '../../Components/ContactForm/contactForm';
-import {withRouter} from 'react-router-dom';
 
 class contact extends Component {
     state = {
@@ -41,14 +40,13 @@ class contact extends Component {
     }
 
     downloadResume = () => {
-        window.open('/download');
+           window.open('/Resume.pdf');
     }
 
     render() {
         let socialWebArray = [];
         let codingArray = [];
 
-        console.log(this.props.history);
         for(let key in this.state.socialWeb) {
             socialWebArray.push({
                 id : key,
@@ -91,4 +89,4 @@ class contact extends Component {
     }
 }
 
-export default withRouter(contact);
+export default contact;
