@@ -42,9 +42,20 @@ class contact extends Component {
     }
 
     downloadResume = () => {
-           axios.get('/resume').then(res => {
-               console.log(res);
-           });
+        axios({
+            method:'post',
+            url:'resume',
+            responseType:'arraybuffer',
+            data : {
+                fromDate: 20/5/2017,
+                toDate: 25/5/2017
+            }
+        })
+            .then(function(response) {
+                let blob = new Blob([response.data], { type:   'application/pdf' } )
+                let url = window.URL.createObjectURL(blob)
+                window.open(url);
+            });
     }
 
     render() {
