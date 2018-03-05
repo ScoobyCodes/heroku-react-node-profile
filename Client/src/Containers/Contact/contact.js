@@ -40,7 +40,7 @@ class contact extends Component {
     }
 
     downloadResume = () => {
-           window.open('/Resume.pdf');
+           window.open('%PUBLIC_URL%/Resume.pdf');
     }
 
     render() {
