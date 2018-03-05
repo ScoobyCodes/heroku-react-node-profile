@@ -10,6 +10,8 @@ import classes from './contact.css';
 import Profile from '../../Components/Profile/profile';
 import Button from '../../Components/Ui/ButtonResume/Button';
 import ContactForm from '../../Components/ContactForm/contactForm';
+import axios from '../../axios';
+import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 
 class contact extends Component {
     state = {
@@ -40,7 +42,9 @@ class contact extends Component {
     }
 
     downloadResume = () => {
-           window.open('/resume');
+           axios.get('/resume').then(res => {
+               console.log(res);
+           });
     }
 
     render() {
@@ -89,4 +93,4 @@ class contact extends Component {
     }
 }
 
-export default contact;
+export default withErrorHandler(contact,axios);
