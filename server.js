@@ -17,10 +17,8 @@ app.use(bodyParser.json());
 app.use(express.static(path.resolve(__dirname, './Client/build')));
 
 app.use('/projects',projects);
-app.use('/download',resume);
+app.use('/resume',resume);
 app.use('/contactdata',mail);
-
-
 
 app.get('*', function(request, response) {
     response.sendFile(path.resolve(__dirname, './Client/build', 'index.html'));
