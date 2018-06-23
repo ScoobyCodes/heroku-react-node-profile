@@ -3,7 +3,8 @@ import classes from './Introduction.css';
 import Aux from '../../hoc/Aux/aux';
 
 const hobbies = [
-    "Full Stack Web Developer", "Competitive Programmer" , "Traveller" , "Caffeine Addict"
+    "Full Stack Web Developer", "Competitive Programmer" , "Traveller" , "Caffeine Addict"  , "Cricket Enthusiast" , "Tech Enthusiast",
+    "Mathematical Freak","Machine Learning Enthusiast","Loves Music","Admires Knowledge"
 ]
 
 
@@ -12,21 +13,7 @@ const name = (
               SOURABH &nbsp; &nbsp; GUPTA
             </span> );
 
-const quote1 = (
-  <div className={classes.QuoteName}>
-     <span>
-         Work Hard Learn EveryDay And Do Better
-     </span>
-  </div>
-);
 
-const quote2 = (
-  <div className={classes.QuoteName}>
-      <span>
-          I think I'm cool. That's all that matters
-      </span>
-  </div>
-);
 const introduction = () => {
     const hobbiesElement = hobbies.map(x => {
         return (
@@ -42,8 +29,6 @@ const introduction = () => {
                <div className={classes.Name}>{name}</div>
                <div className={classes.hobbies}>{hobbiesElement}</div>
            </div>
-            <div className={classes.Quote1}>{quote1}</div>
-            <div className={classes.Quote2}>{quote2}</div>
         </Aux>
     );
     return card;
