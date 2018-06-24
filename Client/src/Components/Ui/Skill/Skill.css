@@ -1,0 +1,31 @@
+.container {
+    background-color: rgba(125,125,125,0.8);
+    width : 90%;
+    height : 6%;
+    margin-top : 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skillName {
+    color: rgba(253,253,253,0.7);
+    width : 40%;
+    height : 7%;
+    margin-top : 3px;
+}
+
+.skillBg {
+    height: 7px;
+    background: rgba(215, 206, 202, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.skill {
+    height: 7px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(139,234,233,0.7);
+}

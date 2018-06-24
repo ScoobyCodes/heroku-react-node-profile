@@ -54,11 +54,20 @@ div span {
 
 
 @media(max-width: 1200px) and (max-height: 1200px){
+    .Name {
+        background-color: rgba(125,125,125,0.8);
+        width : 50%;
+        height : 9%;
+        margin-top : 15px;
+        align-items: center;
+        text-align: center;
+    }
+
     .Introduction {
         left: 5%;
         top: 15%;
         width: 90%;
-        height: 40%;
+        height: 90%;
     }
 
     .Name {
@@ -74,4 +83,16 @@ div span {
         margin-top: 5px;
     }
 
+    .hobbies div{
+        margin: 5px;
+        height: 17px;
+        width: 290px;
+        text-align: center;
+        align-items: center;
+        font-weight: 300;
+        background-color: rgba(255,251,251,0.6);
+        color: rgba(56,56,56,0.9);
+        padding-top: 3px;
+        font-size: 10px;
+    }
 }
