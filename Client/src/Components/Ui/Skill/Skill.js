@@ -1,15 +1,15 @@
 import React from 'react';
 import classes from './Skill.css';
 
-const tw = 410;
+const tw = 40;
 const skill = (props) => {
-    const w = ((tw)/10)*(props.skillValue);
+    const w = ((10)*(props.skillValue))
     const style1 = {
-        width : w
+        width : w+"%"
     }
 
     const style2 = {
-        width: tw
+        width: tw+"%"
     }
     return (
         <div className={classes.container}>
