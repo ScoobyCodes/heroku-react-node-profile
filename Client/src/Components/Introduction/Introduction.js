@@ -17,7 +17,7 @@ const name = (
 const introduction = () => {
     const hobbiesElement = hobbies.map(x => {
         return (
-              <div>
+              <div key={hobbies.indexOf(x)}>
                   {x}
               </div>
         );

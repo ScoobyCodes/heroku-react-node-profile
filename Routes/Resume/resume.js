@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
 var path = require('path');
+const fs = require('fs');
 
-router.post('/',function(req,res) {
-    const file = path.join(__dirname, '/Resume.pdf');
-    res.download(file);
+router.get('/',function(req,res) {
+    res.sendFile(__dirname + '/Resume.pdf');
 });
 
 module.exports = router;
